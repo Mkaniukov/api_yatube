@@ -12,6 +12,4 @@ router.register('posts/(?P<post_id>\\d+)/comments', CommentViewSet,
 router.register('groups', GroupViewSet, basename='groups')
 
 
-urlpatterns = [
-    path('v1/', include(router.urls)),
-    ]
+urlpatterns = [path('v1/', include(router.urls)),]
